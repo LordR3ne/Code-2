@@ -35,9 +35,8 @@ export namespace Droid {
         return command
     }
     export function getRandonNumber(): number {
-        const generateRandomNumber: number = Math.random() * 5;
-        const randomNumber: number = Math.floor(generateRandomNumber);
-        return randomNumber
+        const generateRandomNumber: number = Math.floor(Math.random() * 5);
+        return generateRandomNumber
     }
 
 }
