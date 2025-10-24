@@ -1,10 +1,5 @@
 export namespace Droid {
-
-    type Vektor = {
-        x: number,
-        y: number,
-        z: number,
-    }
+    
     interface Command {
         module: string,
         method: string,
