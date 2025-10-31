@@ -1,4 +1,7 @@
-export var Droid;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Droid = void 0;
+var Droid;
 (function (Droid) {
     let number;
     number = getRandonNumber();
@@ -33,9 +36,8 @@ export var Droid;
     }
     Droid.getCommand = getCommand;
     function getRandonNumber() {
-        const generateRandomNumber = Math.random() * 5;
-        const randomNumber = Math.floor(generateRandomNumber);
-        return randomNumber;
+        const generateRandomNumber = Math.floor(Math.random() * 5);
+        return generateRandomNumber;
     }
     Droid.getRandonNumber = getRandonNumber;
-})(Droid || (Droid = {}));
+})(Droid || (exports.Droid = Droid = {}));
