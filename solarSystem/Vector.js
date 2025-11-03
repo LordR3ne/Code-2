@@ -1,6 +1,6 @@
 "use strict";
-var Asteroid;
-(function (Asteroid) {
+var Solar;
+(function (Solar) {
     class Vector {
         x;
         y;
@@ -30,5 +30,5 @@ var Asteroid;
             return new Vector(this.x, this.y);
         }
     }
-    Asteroid.Vector = Vector;
-})(Asteroid || (Asteroid = {}));
+    Solar.Vector = Vector;
+})(Solar || (Solar = {}));

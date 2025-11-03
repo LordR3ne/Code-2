@@ -15,19 +15,19 @@ var OldMcDonald;
     OldMcDonald.Cat = Cat;
     class Cow extends OldMcDonald.Animal {
         doSpecialAction() {
-            console.log("MUUHH...");
+            console.log("Purr...");
         }
     }
     OldMcDonald.Cow = Cow;
     class Horse extends OldMcDonald.Animal {
         doSpecialAction() {
-            console.log("makes horse sounds...");
+            console.log("Purr...");
         }
     }
     OldMcDonald.Horse = Horse;
     class Pig extends OldMcDonald.Animal {
         doSpecialAction() {
-            console.log("oink...");
+            console.log("Purr...");
         }
     }
     OldMcDonald.Pig = Pig;

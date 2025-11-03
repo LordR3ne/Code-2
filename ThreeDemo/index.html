@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ThreeDemo — Collector 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="overlay">
+    <h1>Collector 3D</h1>
+    <div id="hud">
+      <span id="score">Score: 0</span>
+      <span id="lives">Lives: 3</span>
+    </div>
+    <div id="controls">
+      Use WASD or arrow keys to move. Click Start to begin.
+      <button id="start">Start</button>
+      <button id="restart">Restart</button>
+    </div>
+  </div>
+  <div id="container"></div>
+
+  <!-- Three.js from jsDelivr CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+  <script src="main.js" defer></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-namespace Asteroid {
+namespace Solar {
     export class Vector {
         public x: number;
         public y: number;
@@ -33,5 +33,4 @@ namespace Asteroid {
             return new Vector(this.x, this.y)
         }
     }
-
 }
