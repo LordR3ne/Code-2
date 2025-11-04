@@ -1,0 +1,5 @@
+// namespace AbClass{
+//     new Vektor()
+
+    
+// }

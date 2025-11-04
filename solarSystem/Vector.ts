@@ -29,6 +29,12 @@ namespace Solar {
             this.scale(length);
         }
 
+        public subtract(_subtrahend: Vector): Vector {
+            this.x -= _subtrahend.x
+            this.y -= _subtrahend.y
+            return this.copy()
+        }
+
         public copy(): Vector {
             return new Vector(this.x, this.y)
         }

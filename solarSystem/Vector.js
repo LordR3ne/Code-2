@@ -26,6 +26,11 @@ var Solar;
             this.set(Math.cos(direction), Math.sin(direction));
             this.scale(length);
         }
+        subtract(_subtrahend) {
+            this.x -= _subtrahend.x;
+            this.y -= _subtrahend.y;
+            return this.copy();
+        }
         copy() {
             return new Vector(this.x, this.y);
         }
