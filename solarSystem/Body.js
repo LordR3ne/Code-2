@@ -1,15 +1,13 @@
 "use strict";
-var Solar;
-(function (Solar) {
-    class Body extends Solar.Entity {
-        size;
-        color;
-        rotation;
-        orbit;
-        distance;
-        bodies;
-        constructor() {
-        }
-    }
-    Solar.Body = Body;
-})(Solar || (Solar = {}));
+// namespace Solar {
+//     export class Body extends Entity {
+//         size: number;
+//         color: string;
+//         rotation: number;
+//         orbit: number;
+//         distance: number;
+//         bodies: [Body];
+//         constructor() {
+//         }
+//     }
+// }
