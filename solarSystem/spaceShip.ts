@@ -1,5 +1,5 @@
 namespace Solar {
-    class SpaceShip extends Entity {
+    export class SpaceShip extends Entity {
         public resource: string = ""
         public destination: Vector = new Vector(0, 0);
         public velocity: Vector = new Vector(0, 0);

@@ -2,13 +2,13 @@ namespace Solar {
     window.addEventListener("load", handleLoad);
     export let crc2: CanvasRenderingContext2D;
     let entitys: Entity[] = [];
-    let selectedSpaceship: Spaceship | null = null;
+    let selectedSpaceship: SpaceShip | null = null;
     let selectedBody: Body | null = null;
     let uiPlanet: HTMLSpanElement;
     let uiSpaceship: HTMLSpanElement;
     let showBodyUi: boolean;
     let showSpaceshipUi: boolean;
-
+let sun: Body = new Body(200, "yellow", 0, 0, 0, )
     function handleLoad(_event: Event): void {
         console.log("Asteroids starting");
         let canvas: HTMLCanvasElement | null = document.querySelector("canvas");
@@ -18,9 +18,9 @@ namespace Solar {
         crc2.fillStyle = "black";
         crc2.strokeStyle = "white";
 
-        draw();
-        createPlanets();
-        createSpaceShip();
+        // draw();
+        // createPlanets();
+        // createSpaceShip();
 
 
 
