@@ -5,7 +5,7 @@ namespace Solar {
         rotation: number;
         orbit: number;
         distance: number;
-        bodies: [Body];
+        bodies: Body[];
         public isSun: boolean = false;
         public static bodyCount: number = 0;
         public ID: number = 0;
@@ -27,23 +27,41 @@ namespace Solar {
 
         createChild(_size: number, _color: string, _rotation: number, _orbit: number, _distance: number): number {
             const body: Body = new Body(_size, _color, _rotation, _orbit, _distance)
+            this.bodies.push(body)
             return (body.ID)
         }
 
+        getChild(_ID: number): Body | null{
+            for (let body of this.bodies){
+                if (_ID = body.ID){
+                    console.log(body);
+                    
+                    return body
+                }
 
+            }
+            return null
+        }
         public draw(): void {
             const Sun: Path2D = new Path2D();
             crc2.beginPath();
             crc2.save();
             crc2.translate(this.orbit, 0) //for sun this.orbit = 0
             crc2.arc(0, 0, this.size, 0, 2 * Math.PI)
+            crc2.fillStyle = this.color
+            crc2.fill()
             crc2.restore();
 
             for (let i: number = 0; i < this.bodies.length; i++) {
+                crc2.save()
+                crc2.translate(this.bodies[i].distance, 0)
                 this.bodies[i].draw()
-                crc2.restore()
+                // crc2.restore()
             }
+            console.log(this.size);
+            
         }
+
 
         // getRandomChild(): Body {
 

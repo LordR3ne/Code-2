@@ -45,5 +45,6 @@ var Solar;
             crc2.restore();
         }
     }
+    Solar.SpaceShip = SpaceShip;
     new SpaceShip();
 })(Solar || (Solar = {}));
